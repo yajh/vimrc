@@ -1,2 +1,2 @@
-set guifont=Lucida_Console:h9:cANSI
+set guifont=Lucida_Console:h10:cANSI
 au BufWritePost dsm.txt silent! w! Z:\dsm.txt

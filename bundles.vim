@@ -14,7 +14,9 @@ Bundle 'L9'
 
 " Snippets
 "Bundle "UltiSnips"
-Bundle "SirVer/ultisnips"
+""Bundle "SirVer/ultisnips"
+"Bundle "snipMate"
+Bundle "OmniCppComplete"
 
 " Colorschemes
 Bundle "candycode.vim"
@@ -69,13 +71,14 @@ Bundle "scrooloose/nerdtree"
 
 " Movement
 Bundle "matchit.zip"
+Bundle "EasyMotion"
 "Bundle "kana/vim-operator-user"
 
 " Navigation
-"Bundle "Marks-Browser"
+Bundle "Marks-Browser"
 Bundle "FuzzyFinder"
-"Bundle "taglist.vim"
-Bundle "ervandew/taglisttoo"
+""Bundle "taglist.vim"
+""Bundle "ervandew/taglisttoo"
 
 " Operations
 "Bundle "tpope/vim-repeat"
@@ -109,3 +112,7 @@ Bundle "tpope/vim-fugitive"
 Bundle "tpope/vim-git"
 Bundle "int3/vim-extradite"
 Bundle "gitolite.vim"
+
+"majecty"
+""Bundle "vim-JDE"
+"Bundle "Intellisense-for-vim"

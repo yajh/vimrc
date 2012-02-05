@@ -186,7 +186,7 @@ nmap Y y$
 map <F4> :FSHere<CR>
 
 " save and build
-nmap <LocalLeader>wm  :w<cr>:make<cr>
+""nmap <LocalLeader>wm  :w<cr>:make<cr>
 
 " work with errors
 nmap <LocalLeader>ln  :lnext<CR>
@@ -217,8 +217,8 @@ imap <C-Tab>   <Esc>gt
 nmap <C-S-Tab> gT
 imap <C-S-Tab> <Esc>gT
 
-nmap <leader>f zf%A
-vmap <leader>f zfA
+nmap <leader>f zf%
+vmap <leader>f zf
 
 " Sometimes I hate the defaults for these two in insert!
 "inoremap <c-u> 
@@ -321,7 +321,7 @@ au BufNewFile,BufRead *.pl set ft=prolog
 " make 'make' not spew junk
 au filetype c,cpp set makeprg=g++\ -Wall\ -g\ -o\ \"%<\"\ \"%\"
 au filetype c,cpp set spell
-au filetype c,cpp nmap <LocalLeader>m :w<CR>:silent make<cr>
+""au filetype c,cpp nmap <LocalLeader>m :w<CR>:silent make<cr>
 au filetype c,cpp nmap <LocalLeader>r :!start vimrun %<<cr>
 au filetype c,cpp setl autowrite
 " }}}
@@ -408,4 +408,34 @@ elseif has("macunix")
 elseif has("win32")
     runtime win.vimrc
 endif
+" ---------------------------------------------- }}}
+
+"  Majecty------------------------------- {{{
+""set enc=utf-8
+""set tenc=korea
+""set langmenu=none
+set fenc=utf-8
+set fencs=utf-8,korea
+""set tenc=utf-8
+""nmap <LocalLeader>tg  :!ctags -R --lang=c++ *.cpp *.h *.lua <cr>
+nmap <LocalLeader>cs  :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
+
+nmap <LocalLeader>m :MarksBrowser<cr>
+set tags+=./tags
+" OmniCppComplete"
+let OmniCpp_NamespaceSearch = 1
+let OmniCpp_GlobalScopeSearch = 1
+let OmniCpp_ShowAccess = 1
+let OmniCpp_MayCompleteDot = 1
+let OmniCpp_MayCompleteArrow = 1
+let OmniCpp_MayCompleteScope =1
+"C# folding"
+au FileType cs set omnifunc=syntaxcomplete#Complete
+au FileType cs set foldmethod=marker
+au FileType cs set foldtext=substitute(getline(v:foldstart),'{.*','{...}',)
+au FileType cs set foldlevelstart=2
+au Filetype cs nmap <LocalLeader>cs  :!ctags -R --sort=yes --c\#-kinds=cimnp --fields=+ianmzS --extra=+fq .<CR>
+""let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+
 " ---------------------------------------------- }}}
