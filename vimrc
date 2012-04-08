@@ -216,7 +216,7 @@ nmap <C-Tab>   gt
 imap <C-Tab>   <Esc>gt
 nmap <C-S-Tab> gT
 imap <C-S-Tab> <Esc>gT
-
+            
 nmap <leader>f zf%
 vmap <leader>f zf
 
@@ -295,8 +295,10 @@ if has("gui_running")
         colorscheme candycode
     endif
 
-    set guifont="Inconsolata Medium 12"
-
+    "set guifont="Inconsolata Medium 12"
+    "set guifont="나눔고딕코딩 11"
+    "set guifont="NanumGothic_Coding"
+    set guifont=나눔고딕코딩:h12
     set cursorline cursorcolumn
     au WinLeave * set nocursorline nocursorcolumn
     au WinEnter * set cursorline cursorcolumn

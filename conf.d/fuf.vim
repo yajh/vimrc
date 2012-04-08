@@ -3,7 +3,7 @@
 let g:fuzzy_matching_limit = 20
 map <leader>ff :FufFile<CR>
 map <leader>fr :FufCoverageFile<CR>
-map <leader>b :FufBuffer<CR>
+" map <leader>b :FufBuffer<CR>
 nmap <space> :FufBuffer<CR>
 
 " abbrev for recursive
