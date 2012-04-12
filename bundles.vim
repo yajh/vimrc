@@ -87,7 +87,7 @@ Bundle "michaeljsmith/vim-indent-object"
 
 " Utility
 "Bundle "ZoomWin"
-Bundle "YankRing.vim"
+"Bundle "YankRing.vim"
 Bundle "netrw.vim"
 Bundle "tlib"
 Bundle "bufkill.vim"
