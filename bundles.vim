@@ -77,6 +77,7 @@ Bundle "EasyMotion"
 " Navigation
 Bundle "Marks-Browser"
 Bundle "FuzzyFinder"
+Bundle "taglist-plus"
 ""Bundle "taglist.vim"
 ""Bundle "ervandew/taglisttoo"
 

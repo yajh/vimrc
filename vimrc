@@ -280,9 +280,9 @@ set showcmd		" display incomplete commands
 
 "colorscheme default2
 if stridx(&rtp, "blackboard") != -1
-    "colorscheme blackboard
+    colorscheme blackboard
 endif
-colorscheme "candycode.vim"
+"colorscheme "candycode.vim"
 
 " 1 height windows
 set winminheight=1
@@ -444,4 +444,4 @@ au Filetype cs nmap <LocalLeader>cs  :!ctags -R --sort=yes --c\#-kinds=cimnp --f
 ""let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 
 " ---------------------------------------------- }}}
-colorscheme candycode
+colorscheme blackboard
