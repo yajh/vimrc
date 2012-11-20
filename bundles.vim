@@ -50,9 +50,9 @@ endif
 "Bundle "LaTeX-Box"
 Bundle "jQuery"
 "Bundle "pdc.vim"
-"Bundle "tpope/vim-rails"
+Bundle "tpope/vim-rails"
 "Bundle "tpope/vim-cucumber"
-"Bundle "vim-ruby/vim-ruby"
+Bundle "vim-ruby/vim-ruby"
 "Bundle "Rip-Rip/clang_complete"
 "Bundle "msanders/cocoa.vim"
 "Bundle "sukima/xmledit"
@@ -119,3 +119,11 @@ Bundle "gitolite.vim"
 "Bundle "Intellisense-for-vim"
 Bundle "vim-coffee-script"
 Bundle "jade.vim"
+Bundle "vim-stylus"
+Bundle 'less.vim'
+Bundle "csharp.vim"
+
+" Markdown
+Bundle "instant-markdown.vim"
+Bundle "MarkdownFootnotes"
+Bundle "Markdown"
