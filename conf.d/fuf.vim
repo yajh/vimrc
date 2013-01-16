@@ -5,6 +5,7 @@ map <leader>ff :FufFile<CR>
 map <leader>fr :FufCoverageFile<CR>
 " map <leader>b :FufBuffer<CR>
 nmap <space> :FufBuffer<CR>
+map <leader>ft : FufBufferTag<CR>
 
 " abbrev for recursive
 let g:fuf_abbrevMap = {"^\*" : ["**/",],}

@@ -34,15 +34,22 @@ Bundle "Twinside/vim-codeoverview"
 
 if has("python")
     Bundle "VOoM"
-    Bundle "rygwdn/vim-async"
-    Bundle "rygwdn/rope-omni"
-python << EOF
-import vim
-try:
-    import ropevim
-except ImportError:
-    vim.command('''au VimEnter * echomsg "can't import ropevim"''')
-EOF
+    Bundle "davidhalter/jedi-vim"
+    "Bundle "rygwdn/vim-async"
+    "Bundle "rygwdn/rope-omni"
+    "Bundle "Python-mode-klen"
+    "Bundle "vim-python-virtualenv"
+    "Bundle "jmcantrell/vim-virtualenv"
+
+    "Bundle "jmcantrell/virtualenv-vim"
+    
+"python << EOF
+"import vim
+"try:
+"    import ropevim
+"except ImportError:
+"    vim.command('''au VimEnter * echomsg "can't import ropevim"''')
+"EOF
 endif
 
 
@@ -127,3 +134,13 @@ Bundle "csharp.vim"
 Bundle "instant-markdown.vim"
 Bundle "MarkdownFootnotes"
 Bundle "Markdown"
+
+
+" majecty python
+Bundle "tpope/vim-surround"
+Bundle "pyflakes"
+"Bundle "sjl/gundo.vim"
+"Bundle "pydoc"
+Bundle "pep8"
+"Bundle "py.test"
+"Bundle "makegreen"

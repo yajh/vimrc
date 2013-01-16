@@ -161,7 +161,8 @@ autocmd BufReadPost *
 " ------------------------------------------------------------- }}}
 
 " searching ------------------------------------------ {{{
-set nohlsearch                   " enable search highlight globally
+"set nohlsearch                   " enable search highlight globally
+set hlsearch
 set incsearch                  " show matches as soon as possible
 set noshowmatch                " don't show matching brackets when typing
 set showfulltag                " Show full tags when doing search completion
@@ -279,9 +280,9 @@ set lazyredraw                  " don't redraw when running macros
 set showcmd		" display incomplete commands
 
 "colorscheme default2
-if stridx(&rtp, "blackboard") != -1
-    colorscheme blackboard
-endif
+"if stridx(&rtp, "blackboard") != -1
+"    colorscheme blackboard
+"endif
 "colorscheme "candycode.vim"
 
 " 1 height windows
@@ -379,11 +380,16 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 " }}}
 
 "" Python stuff {{{
-autocmd FileType python compiler pylint
+"autocmd FileType python compiler pylint
 autocmd FileType python setlocal foldmethod=indent
 " }}}
 
 " --------------------------------------------------- }}}
+"
+"py <<EOF
+"import dev_appserver
+"dev_appserver.fix_sys_path()
+"EOF
 
 " includes {{{
 
@@ -444,4 +450,11 @@ au Filetype cs nmap <LocalLeader>cs  :!ctags -R --sort=yes --c\#-kinds=cimnp --f
 ""let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 
 " ---------------------------------------------- }}}
-colorscheme blackboard
+colorscheme candycode
+
+"  python------------------------------- {{{
+
+let g:pyflakes_use_quickfix = 0
+filetype plugin indent on
+
+" ---------------------------------------------- }}}
