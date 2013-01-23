@@ -450,11 +450,29 @@ au Filetype cs nmap <LocalLeader>cs  :!ctags -R --sort=yes --c\#-kinds=cimnp --f
 ""let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 
 " ---------------------------------------------- }}}
-colorscheme candycode
+"colorscheme candycode
+colorscheme blackboard
 
 "  python------------------------------- {{{
 
 let g:pyflakes_use_quickfix = 0
 filetype plugin indent on
+
+if has('python')
+py << EOF
+import os.path
+import sys
+import vim
+if 'VIRTUAL_ENV' in os.environ:
+    #project_base_dir = os.environ['VIRTUAL_ENV']
+    #sys.path.insert(0, project_base_dir)
+    #activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+    #execfile(activate_this, dict(__file__=activate_this))
+
+    buddy_rush_dir = '/home/jh/code/buddy-rush'
+    sys.path.insert(0, buddy_rush_dir)
+
+EOF
+endif
 
 " ---------------------------------------------- }}}

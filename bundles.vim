@@ -27,7 +27,7 @@ Bundle "blackboard.vim"
 "Bundle "DoxygenToolkit.vim"
 "Bundle "FSwitch"
 "Bundle "rygwdn/vim-ipython"
-Bundle "rygwdn/vim-pylint"
+"Bundle "rygwdn/vim-pylint"
 Bundle "rygwdn/latexbox-rubber"
 Bundle "mephux/vim-javascript.git"
 Bundle "Twinside/vim-codeoverview"
@@ -83,7 +83,9 @@ Bundle "EasyMotion"
 
 " Navigation
 Bundle "Marks-Browser"
-Bundle "FuzzyFinder"
+" Bundle "FuzzyFinder"
+Bundle 'ctrlp.vim'
+
 Bundle "taglist-plus"
 ""Bundle "taglist.vim"
 ""Bundle "ervandew/taglisttoo"
@@ -131,8 +133,8 @@ Bundle 'less.vim'
 Bundle "csharp.vim"
 
 " Markdown
-Bundle "instant-markdown.vim"
-Bundle "MarkdownFootnotes"
+"Bundle "instant-markdown.vim"
+"Bundle "MarkdownFootnotes"
 Bundle "Markdown"
 
 
